@@ -36,6 +36,15 @@ class Myfs:
                 return
 
         current.addDir(name, time)
+
+    def createFile(self, name, time):
+        pass
+
+    def appendToFile(self, path, str):
+        pass
+
+    def printFile(self, path):
+        pass 
     
     def ls(self, path):
         dirsInPath = []
