@@ -15,7 +15,7 @@ Is it possible to make an operating system in 6 months?
 * memory management (i.e. all programs have enough memory to run)
 * filesystem management (e.g. programs can save & load from disk)
 
-# process scheduling
+# Process scheduling
 
 * decides which process gets to run on the CPU
 * switches between processes very quickly (multitasking)
@@ -24,7 +24,7 @@ Is it possible to make an operating system in 6 months?
 * saves and restores process state during context switches
 * ensures fairness so all programs make progress
 
-# memory management
+# Memory management
 * gives each program its own isolated memory space
 * keeps track of which memory regions are free or used
 * loads program code and data into RAM when needed
@@ -32,7 +32,7 @@ Is it possible to make an operating system in 6 months?
 * swaps memory pages to disk when RAM is full
 * protects memory so programs cannot overwrite each other
 
-# filesystem management
+# Filesystem management
 * organizes data into files and folders
 * maps file names to actual data blocks on disk
 * stores metadata like size, permissions, timestamps
@@ -40,29 +40,31 @@ Is it possible to make an operating system in 6 months?
 * ensures data consistency (e.g., journaling)
 * provides APIs for reading, writing, creating, deleting files
 
-# what is the complexity of real OS (linux)
+# What is the complexity of real OS (linux)
 ![image](https://makelinux.github.io/kernel/map/LKM63_512.png)
 
 URL: https://makelinux.github.io/kernel/map/
 
-# how many lines of code does each subsystem have
+# How many lines of code does each subsystem have
 ![image](https://raw.githubusercontent.com/satoru-takeuchi/linux-kernel-statistics/refs/heads/master/image/number_of_lines_of_each_subsystem_for_each_release.png)
 
 URL: https://github.com/satoru-takeuchi/linux-kernel-statistics
-# My work
-* I made reasearch into OSeses
+
+# What I've done
+* I made reasearch into the topic of operating systems
 * understood subsystems and what they do
-* picked file system and implementing basic inode system that reference fragments of files
+* I chose to implement a trivial file system in python that allows you to manage files and directories
 
-# details about small problem chosen to code
+# Details about small problem chosen to code
 
-**N/A**
+* directories have name and can contain other directories and files
+* files have a name, content, and size
+* each file or directory links to an inode storing metadata (size, creation time) and content reference
+* support creating, reading, writing, and listing files and directories
 
-# code at github, details
-
+# Code at github, details
 URL: https://github.com/progitting/hpq
-# screenshots of the code
 
-# Major resources
+# Additional resources
 * Modern Operating Systems, Global Edition, 5th edition
 * https://www.minix3.org/
