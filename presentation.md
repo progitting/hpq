@@ -33,7 +33,6 @@ Is it possible to make an operating system in 6 months?
 * protects memory so programs cannot overwrite each other
 
 # filesystem management
-
 * organizes data into files and folders
 * maps file names to actual data blocks on disk
 * stores metadata like size, permissions, timestamps
@@ -42,34 +41,28 @@ Is it possible to make an operating system in 6 months?
 * provides APIs for reading, writing, creating, deleting files
 
 # what is the complexity of real OS (linux)
-
 ![image](https://makelinux.github.io/kernel/map/LKM63_512.png)
 
 URL: https://makelinux.github.io/kernel/map/
 
 # how many lines of code does each subsystem have
-
 ![image](https://raw.githubusercontent.com/satoru-takeuchi/linux-kernel-statistics/refs/heads/master/image/number_of_lines_of_each_subsystem_for_each_release.png)
 
 URL: https://github.com/satoru-takeuchi/linux-kernel-statistics
 # My work
-
 * I made reasearch into OSeses
-
 * understood subsystems and what they do
-
 * picked file system and implementing basic inode system that reference fragments of files
 
 # details about small problem chosen to code
 
-// 
+**N/A**
 
 # code at github, details
 
+URL: https://github.com/progitting/hpq
 # screenshots of the code
 
 # Major resources
-
 * Modern Operating Systems, Global Edition, 5th edition
-
 * https://www.minix3.org/
