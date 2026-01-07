@@ -37,7 +37,6 @@ Is it possible to make an operating system in 6 months?
 * maps file names to actual data blocks on disk
 * stores metadata like size, permissions, timestamps
 * allocates and frees disk blocks as files grow or shrink
-* ensures data consistency (e.g., journaling)
 * provides APIs for reading, writing, creating, deleting files
 
 # What is the complexity of real OS (linux)
